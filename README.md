@@ -91,6 +91,14 @@ This Turing machine operates as follows:
 
 ### **Turing machine operation detailed description**
 
+<p align="center">
+    <img
+        src = "https://raw.githubusercontent.com/LStepanek/turing_machine/refs/heads/main/turing_machine_flow_chart.png?token=GHSAT0AAAAAAC4RMRL6QDHICNUFHSFOAR7KZ4B5UZA"
+        style = "height:900px;"
+    >
+</p>
+
+
 1. **State: `move_right_to_first_end`**
    - The machine scans right through `0`s and `1`s in the first binary integer.
    - Upon encountering `#`, transitions to `move_right_to_second_end`.
