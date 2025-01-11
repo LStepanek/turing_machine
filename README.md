@@ -7,7 +7,7 @@ This repository contains an implementation of a Turing machine simulator, design
 
 ---
 
-### Table of Contents
+## Table of Contents
 
 1. [Getting Started](#getting-started)
    - [Prerequisites](#prerequisites)
