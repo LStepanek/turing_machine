@@ -4,7 +4,23 @@ This repository contains an implementation of a Turing machine simulator, design
 
 **Key Feature**: This Turing machine can perform the addition of a finite number of binary integers on a single tape, separated by `#` symbols. 
 
+
 ---
+
+### Table of Contents
+
+1. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+2. [High-level Summary](#high-level-summary)
+3. [States](#states)
+4. [Alphabet](#alphabet)
+5. [Turing Machine Operations' Detailed Description](#turing-machine-operations-detailed-description)
+6. [Sources](#sources)
+7. [Unit Tests](#unit-tests)
+
+---
+
 
 ## **Getting Started**
 
@@ -47,7 +63,7 @@ Ensure that you have the following installed:
 
 ---
 
-### **High-level summary**
+## **High-level summary**
 
 This Turing machine operates as follows:
 
@@ -88,7 +104,7 @@ This Turing machine operates as follows:
 
 ---
 
-### **States**
+## **States**
 
 The Turing machine has the following 20 states:
 
@@ -115,7 +131,7 @@ The Turing machine has the following 20 states:
 
 ---
 
-### **Alphabet**
+## **Alphabet**
 
 The Turing machine uses the following symbols in its tape alphabet:
 
@@ -130,7 +146,7 @@ The Turing machine uses the following symbols in its tape alphabet:
 
 ---
 
-### **Turing machine operations' detailed description**
+## **Turing machine operations' detailed description**
 
 <p align="center">
     <img
@@ -230,13 +246,10 @@ The Turing machine uses the following symbols in its tape alphabet:
 21. **State: `halt`**
     - The machine halts, leaving the final sum on the tape.
 
----
-
-Here's a Markdown-friendly "Sources" section that credits your inspiration while emphasizing your independent contribution:
 
 ---
 
-### **Sources**
+## **Sources**
 
 - The implementation of the Turing machine for adding binary integers is partially inspired by a discussion on [Stack Overflow](https://stackoverflow.com/questions/59045832/turing-machine-for-addition-and-comparison-of-binary-numbers). This provided the foundational logic for the summation of two integers using a Turing machine.
 
@@ -244,7 +257,7 @@ Here's a Markdown-friendly "Sources" section that credits your inspiration while
 
 ---
 
-### **Unit tests**
+## **Unit tests**
 
 ```r
 ================================================================================
