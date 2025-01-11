@@ -92,7 +92,7 @@ This Turing machine operates as follows:
 
 <p align="center">
     <img
-        src = "https://raw.githubusercontent.com/LStepanek/turing_machine/refs/heads/main/turing_machine_flow_chart.png?token=GHSAT0AAAAAAC4RMRL75GMM4KLF22LG3TJKZ4B53OA"
+        src = "https://github.com/LStepanek/turing_machine/blob/main/turing_machine_flow_chart.png?raw=true"
         style = "height:800px;"
     >
 </p>
