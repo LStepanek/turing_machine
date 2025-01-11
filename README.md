@@ -16,8 +16,9 @@ This repository contains an implementation of a Turing machine simulator, design
 3. [States](#states)
 4. [Alphabet](#alphabet)
 5. [Turing Machine Operations' Detailed Description](#turing-machine-operations-detailed-description)
-6. [Sources](#sources)
-7. [Unit Tests](#unit-tests)
+6. [Pseudocode](#pseudocode)
+7. [Sources](#sources)
+8. [Unit Tests](#unit-tests)
 
 ---
 
@@ -245,6 +246,83 @@ The Turing machine uses the following symbols in its tape alphabet:
 
 21. **State: `halt`**
     - The machine halts, leaving the final sum on the tape.
+
+
+---
+## **Pseudocode**
+
+Algorithm `TuringMachineAddition`
+
+**Input:** A tape containing binary integers separated by `#` symbols.
+
+**Output:** A tape with the final sum of all binary integers in binary form, padded by `#`.
+
+1. **Initialize**
+   - Set the current state to `move_right_to_first_end`.
+   - Place the tape head at the first binary digit (`0` or `1`).
+
+2. **Process Binary Integers**
+   WHILE `current_state` ≠ "halt":
+      SWITCH (`current_state`):
+      
+      **Case: `move_right_to_first_end`**
+      - Move right through `0`s and `1`s until a `#` is encountered.
+      - Transition to `move_right_to_second_end`.
+
+      **Case: `move_right_to_second_end`**
+      - Move right through the second binary integer.
+      - IF another `#` is encountered:
+        - Transition to `check_if_then_halt`.
+      - ELSE IF `c` or `h` is encountered:
+        - Transition to `subtract_one_from_second`.
+
+      **Case: `check_if_then_halt`**
+      - IF not the last two integers:
+        - Write `c` and transition to `go_back_and_write_hash`.
+      - ELSE:
+        - Write `h` and transition to `go_back_and_write_halt`.
+
+3. **Subtraction**
+   **Case: `subtract_one_from_second`**
+   - Decrement the second binary integer:
+     - Replace `0` with `1`, move left.
+     - Replace `1` with `0`, transition to `move_left_to_first_end`.
+     - IF `#` is encountered, transition to `clean_up`.
+
+4. **Addition**
+   **Case: `move_left_to_first_end`**
+   - Move left through the first binary integer.
+   - Upon encountering `#`, transition to `add_one_to_first`.
+
+   **Case: `add_one_to_first`**
+   - Add binary digits with carry:
+     - Replace `0` with `1`, transition to `move_right_to_first_end`.
+     - Replace `1` with `0`, continue left.
+     - Replace `#` with `1`, transition to `move_right_to_first_end`.
+
+5. **Cleanup and Repeat**
+   **Case: `clean_up`**
+   - Replace intermediate symbols:
+     - IF `c`, transition to `move_left_and_reach_digits`.
+     - IF `h`, transition to `move_one_step_to_right_and_halt`.
+
+6. **Final Shifting**
+   **Case: `move_left_to_first_end_and_start_shifting`**
+   - Shift digits of the first integer to the second:
+     - IF `b`, transition to `move_right_reach_c_and_replace_it_by_hash`.
+
+   **Case: `move_right_and_shift_zero`**
+   - Shift a `0` and transition to `turn_left_and_shift_zero`.
+
+   **Case: `move_right_and_shift_one`**
+   - Shift a `1` and transition to `turn_left_and_shift_one`.
+
+7. **Final Summation and Halt**
+   **Case: `move_one_step_to_right_and_halt`**
+   - Replace `b` with `#` and transition to `halt`.
+
+8. **End**
+   - The tape now contains the final sum of all integers.
 
 
 ---
