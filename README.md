@@ -20,7 +20,7 @@ Ensure that you have the following installed:
    ```bash
    $ git clone git://github.com/LStepanek/turing_machine.git
    ```
-   Or just download it locally.
+   Or simply download it as a ZIP file and extract it locally.
 
 2. Run the `__main__.R` script to execute the Turing machine:
    ```r
