@@ -89,12 +89,12 @@ This Turing machine operates as follows:
 
 ---
 
-### **Turing machine operation detailed description**
+### **Turing machine operations' detailed description**
 
 <p align="center">
     <img
         src = "https://raw.githubusercontent.com/LStepanek/turing_machine/refs/heads/main/turing_machine_flow_chart.png?token=GHSAT0AAAAAAC4RMRL6QDHICNUFHSFOAR7KZ4B5UZA"
-        style = "height:900px;"
+        style = "height:800px;"
     >
 </p>
 
