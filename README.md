@@ -18,10 +18,9 @@ Ensure that you have the following installed:
 
 1. Clone this repository:
    ```bash
-   git clone <repository_url>
-   cd <repository_folder>
+   $ git clone git://github.com/LStepanek/turing_machine.git
    ```
-   Or download it locally.
+   Or just download it locally.
 
 2. Run the `__main__.R` script to execute the Turing machine:
    ```r
