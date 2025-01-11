@@ -279,7 +279,7 @@ for(
     cat("\n")
     cat("\n")
     
-    cat("input tape:")
+    cat("tape on input:")
     cat("\n")
     cat(
         my_input_tape
@@ -288,7 +288,7 @@ for(
     cat("\n")
     cat("\n")
     
-    cat("output tape:")
+    cat("the same tape on output:")
     cat("\n")
     cat(
         my_output_tape
