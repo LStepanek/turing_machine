@@ -2,6 +2,8 @@
 
 This repository contains an implementation of a Turing machine simulator, designed as a demonstration of computational concepts in the course **KIP/XTILO: Computability and Complexity**. The project includes scripts for encoding and decoding Turing machine states and transitions, running the Turing machine with predefined configurations, and executing unit tests to ensure its correctness.
 
+**Key Feature**: This Turing machine can perform the addition of a finite number of binary integers on a single tape, separated by `#` symbols. 
+
 ---
 
 ## **Getting Started**
