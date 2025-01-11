@@ -1,3 +1,51 @@
+## **Turing machine simulator**
+
+This repository contains an implementation of a Turing machine simulator, designed as a demonstration of computational concepts in the course **KIP/XTILO: Computability and Complexity**. The project includes scripts for encoding and decoding Turing machine states and transitions, running the Turing machine with predefined configurations, and executing unit tests to ensure its correctness.
+
+---
+
+## **Getting Started**
+
+### **Prerequisites**
+Ensure that you have the following installed:
+- **R**: A working R interpreter.
+
+---
+
+### **Installation**
+
+1. Clone this repository:
+   ```bash
+   git clone <repository_url>
+   cd <repository_folder>
+   ```
+   Or download it locally.
+
+2. Run the `__main__.R` script to execute the Turing machine:
+   ```r
+   source("__main__.R")
+   ```
+
+3. The script will automatically load the following components:
+   - **State transitions**:
+     ```r
+     source("states_and_transitions.R")
+     ```
+   - **Turing machine logic**:
+     ```r
+     source("turing_machine.R")
+     ```
+   - **Unit tests**:
+     ```r
+     source("unit_tests.R")
+     ```
+   - **Encoder and decoder**:
+     ```r
+     source("encoder_and_decoder.R")
+     ```
+
+---
+
 ### **High-level summary**
 
 This Turing machine operates as follows:
