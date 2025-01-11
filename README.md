@@ -251,6 +251,13 @@ The Turing machine uses the following symbols in its tape alphabet:
 ---
 ## **Pseudocode**
 
+<p align="center">
+    <img
+        src = "https://raw.githubusercontent.com/LStepanek/turing_machine/refs/heads/main/turing_machine_simplified_pseudocode.png?raw=true"
+        style = "height:1000px;"
+    >
+</p>
+
 Algorithm `TuringMachineAddition`
 
 **Input:** A tape containing binary integers separated by `#` symbols.
