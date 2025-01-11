@@ -232,6 +232,18 @@ The Turing machine uses the following symbols in its tape alphabet:
 
 ---
 
+Here's a Markdown-friendly "Sources" section that credits your inspiration while emphasizing your independent contribution:
+
+---
+
+### **Sources**
+
+- The implementation of the Turing machine for adding binary integers is partially inspired by a discussion on [Stack Overflow](https://stackoverflow.com/questions/59045832/turing-machine-for-addition-and-comparison-of-binary-numbers). This provided the foundational logic for the summation of two integers using a Turing machine.
+
+- The approach of **shifting the first binary integer toward the second integer**, performing the summation, and then recursively repeating the process for newly defined pairs of integers is my own independent logic. While I do not claim to have invented this method, I developed it independently as part of this implementation.
+
+---
+
 ### **Unit tests**
 
 ```r
