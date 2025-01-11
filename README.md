@@ -1,4 +1,4 @@
-## **Turing machine simulator**
+# **Turing machine simulator**
 
 This repository contains an implementation of a Turing machine simulator, designed as a demonstration of computational concepts in the course **KIP/XTILO: Computability and Complexity**. The project includes scripts for encoding and decoding Turing machine states and transitions, running the Turing machine with predefined configurations, and executing unit tests to ensure its correctness.
 
@@ -86,6 +86,8 @@ This Turing machine operates as follows:
 9. **Halting Condition**:
    - The machine halts after the final summation of the last two integers and cleanup is complete.
 
+
+---
 
 ### **Turing machine operation detailed description**
 
