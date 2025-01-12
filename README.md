@@ -358,7 +358,7 @@ This simulation demonstrates the Turing machine's ability to process and add bin
  - The position of the tape head, indicated by a line of underscores (`_`) with a `v` symbol directly above the current position.
  - The current contents of the tape, showing how it evolves during computation.
 
-```r
+```text
 step : 1
 state: move_right_to_first_end
 ___________________________________v____________________________________________
