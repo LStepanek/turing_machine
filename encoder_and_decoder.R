@@ -38,6 +38,8 @@ myTuringMachineEncoder <- function(
     #            `1`.
     #         -- Each transition is concatenated, separated by two consecutive
     #            `1`s (`11`).
+    #         -- The string is bounded by a leading and trailing triplet of
+    #            1's (`111`).
     #     -- dictionary: A data frame mapping each unique value (state,
     #        symbol, or move) to its encoded representation.
     # 
@@ -160,8 +162,13 @@ myTuringMachineEncoder <- function(
     return(
         list(
             "encoded_states_and_transitions" = paste(
-                my_encoded_matrix,
-                collapse = "11"
+                "111",
+                paste(
+                    my_encoded_matrix,
+                    collapse = "11"
+                ),
+                "111",
+                sep = ""
             ),
             "dictionary" = my_dictionary
         )
@@ -189,6 +196,8 @@ myTuringMachineDecoder <- function(
     #     -- Sequences of 0's represent unique values (states, symbols,
     #        or moves).
     #     -- Transitions are separated by two consecutive 1's ("11").
+    #     -- The string is bounded by a leading and trailing triplet of 1's
+    #        ("111").
     #   dictionary: A data frame mapping encoded sequences of 0's to their
     #               original values. Must contain the following columns:
     #     -- `encoded_value`: The sequence of 0's representing each value.
@@ -228,6 +237,18 @@ myTuringMachineDecoder <- function(
     #   -- The dictionary must contain all encoded values to ensure proper
     #      decoding.
     # '''
+    
+    encoded_states_and_transitions <- gsub(
+        "^111",
+        "",
+        encoded_states_and_transitions
+    )
+    
+    encoded_states_and_transitions <- gsub(
+        "111$",
+        "",
+        encoded_states_and_transitions
+    )
     
     my_encoded_transitions <- strsplit(
         encoded_states_and_transitions,
