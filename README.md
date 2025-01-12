@@ -351,7 +351,7 @@ Algorithm `TuringMachineAddition`
 
 The script `step_by_step_simulation.R` uses the `addingTuringMachineStepByStep()` function to simulate the Turing machine's step-by-step analysis of the following input tape,
 
-`###################################101#10#110###################################`
+`###################################101#10#110###################################`.
 
 This simulation demonstrates the Turing machine's ability to process and add binary integers while displaying each computational step in the console. The function prints the following details to the console for each step:
  - The current step and state of the Turing machine.
