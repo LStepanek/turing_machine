@@ -354,8 +354,8 @@ The script `step_by_step_simulation.R` uses the `addingTuringMachineStepByStep()
 `###################################101#10#110###################################`.
 
 This simulation demonstrates the Turing machine's ability to process and add binary integers while displaying each computational step in the console. The function prints the following details to the console for each step:
- - The current step and state of the Turing machine.
- - The position of the tape head, indicated by a line of underscores (`_`) with a `v` symbol directly above the current position.
+ - The current step of the program and current state of the Turing machine.
+ - The position of the tape head, indicated by a line of underscores (`_`) with a `v` symbol directly above the current position of the head.
  - The current contents of the tape, showing how it evolves during computation.
 
 ```text
